@@ -3,8 +3,8 @@ let score = 0;
 let stopScore = false;
 
 button.addEventListener('click', function(){
-    if(!stopScore){
-        if(score < 10){
+    
+        if(score <= 10 && !stopScore){
             score++;
             button.innerHTML= 'PLAY' + score++;
         }else {
@@ -18,5 +18,5 @@ button.addEventListener('click', function(){
         }
     }
     
-})
+)
 
