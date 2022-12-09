@@ -4,15 +4,15 @@ let stopScore = false;
 
 button.addEventListener('click', function(){
     
-        if(score <= 10 && !stopScore){
+        if(score < 10 && !stopScore){
             score++;
-            button.innerHTML= 'PLAY' + score++;
+            button.innerHTML= 'PLAY' + score;
         }else {
             
             setTimeout(() => {
                 stopScore = false;
                 score = 0;
-                button.innerHTML= 'PLAY' + score++;
+                button.innerHTML= 'PLAY' + score;
             }, 4000);
                 
         }
